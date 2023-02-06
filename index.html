@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple Dictionary </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./icon.jpg">
+    <!--https://www.dictionary.com/browse/new-->
+</head>
+<body>
+
+    <!--Nav and Input Box-->
+    <div id="nav_main">
+        <div class="center" style="height: 100%">
+            <div id="search_bar_container">
+                <button id="submit_button">🔍</button>
+                <input type="text" id="search_bar" name="search_bar" placeholder="Search for any word">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Word Display Box-->
+    <div class="center">
+        <div id="display_container">
+            <div id="word_display">
+                <h1 id="title_name"></h1> <p id="title_pron"></p>
+            </div>
+            <hr>
+
+            <!--<li>
+                    <h5>1</h5>
+                    <p>This is a definition <br><span>This is an example</span></p>
+                </li>-->
+                
+            <!--Noun Definitions-->
+            <div id="noun_display_main">
+                <h3 id="noun_header">Noun</h3>
+                    <ul id="noun_list_main">
+     
+                    </ul>
+            </div>
+
+            <!--Verb Definitions-->
+            <div id="verb_display_main">
+                <h3 id="verb_header">Verb</h3>
+                    <ul id="verb_list_main">
+
+                    </ul>
+            </div>
+            
+            <!--Adj Definitions-->
+            <div id="adj_display_main">
+                <h3 id="adj_header">Adj.</h3>
+                    <ul id="adj_list_main">
+
+                    </ul>
+            </div>
+
+            <!--Adv Definitions-->
+            <div id="adv_display_main">
+                <h3 id="adv_header">Adv.</h3>
+                    <ul id="adv_list_main">
+
+                    </ul>
+            </div>
+
+            <hr>
+
+            <!--Possible Synonyms Location-->
+            <div id="syn_container">
+                <h1>Synonyms</h1>
+                <p id="syn_output"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Script Modules-->
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

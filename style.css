@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-blue: #0E5AB6;
+    --main-dark-blue: #00248B;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #e4e4e6;
+}
+#nav_main {
+    width: 100%;
+    height: 12.5vh;
+    background-color: var(--main-dark-blue);
+}
+
+#search_bar_container {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#search_bar {
+    font-size: 2em;
+    border: 0;
+    padding: 10px;
+    /*border-bottom: solid var(--main-blue) 2px;*/
+}
+
+#search_bar:focus {
+    border: 3px solid white;
+}
+
+#submit_button {
+    font-size: 2em;
+    border: 0px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#submit_button:hover {
+    background-color: var(--main-blue);
+    border-radius: 10px;
+}
+
+
+#display_container {
+    background-color: white;
+    height: fit-content;
+    width: 50vw;
+    margin-top: 2.5vw;
+    border-radius: 20px;
+    margin-bottom: 5vh;
+    padding-bottom: 5vh;
+
+    visibility: hidden;
+}
+
+#word_display {
+    display: flex;
+    padding: 50px;
+
+}
+
+#word_display h1 {
+    font-size: 3em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#word_display p {
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+hr {
+    border: 1px solid black;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#noun_display_main, #verb_display_main, #adj_display_main, #adv_display_main {
+    margin-top: 2.5vh;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#noun_display_main h3, #verb_display_main h3, #adj_display_main h3, #adv_display_main h3 {
+    font-weight: lighter;
+    font-size: 1.25em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    margin-bottom: 2.5vh;
+    visibility: hidden;
+}
+
+#noun_list_main, #verb_list_main, #adj_list_main, #adv_list_main {
+    list-style-type: none;
+}
+
+#noun_list_main li, #verb_list_main li, #adj_list_main li, #adv_list_main li {
+    display: flex;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: row;
+    /*
+    background-color: #e4e4e6;
+    border-radius: 10px;
+    */
+}
+
+#noun_list_main li h5, #verb_list_main li h5, #adj_list_main li h5, #adv_list_main li h5 {
+    font-size: 1em;
+    font-weight: 100;
+    padding: 10px;
+}
+
+#noun_list_main li p,#verb_list_main li p, #adj_list_main li p, #adv_list_main li p {
+    font-size: 1.25em;
+    padding: 15px;
+}
+
+#noun_list_main li p span, #verb_list_main li p span, #adj_list_main li p span, #adv_list_main li p span {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+
+#syn_container {
+    width: 90%;
+    padding: 50px;
+    padding-top: 2vh;
+}
+
+#syn_container h1 {
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#syn_container p {
+    font-size: 1.25em;
+    padding: 15px;
+    margin-top: 2vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
